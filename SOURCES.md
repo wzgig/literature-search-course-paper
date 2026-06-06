@@ -73,6 +73,10 @@
 | PubMed PMID 34979346 | https://pubmed.ncbi.nlm.nih.gov/34979346/ | 2026-06-06 | 核验 DELFIA Xpress PlGF 与 sFlt-1:PlGF ratio rule-in/rule-out 阈值研究 | DOI: 10.1016/j.preghy.2021.12.008 |
 | PubMed PMID 38350106 | https://pubmed.ncbi.nlm.nih.gov/38350106/ | 2026-06-06 | 支撑血管生成标志物与子痫前期机制、诊断和预后评估背景 | DOI: 10.1097/AOG.0000000000005532 |
 | PubMed PMID 28851242 | https://pubmed.ncbi.nlm.nih.gov/28851242/ | 2026-06-06 | 作为检测平台一致性、PlGF 与 sFlt-1/PlGF 比值预测准确性比较的候选来源 | DOI: 10.1080/14767058.2017.1373760 |
+| PubMed PMID 32063058 | https://pubmed.ncbi.nlm.nih.gov/32063058/ | 2026-06-06 | 支撑多标志物联合与“血管生成-胎盘综合征”框架，补充第 5 章未来方向 | DOI: 10.1161/HYPERTENSIONAHA.119.13763 |
+| PubMed PMID 35275947 | https://pubmed.ncbi.nlm.nih.gov/35275947/ | 2026-06-06 | 支撑中高风险孕妇中 sFlt-1/PlGF 比值预测子痫前期和不良妊娠结局的可行性讨论 | DOI: 10.1371/journal.pone.0265080 |
+| PubMed PMID 39391014 | https://pubmed.ncbi.nlm.nih.gov/39391014/ | 2026-06-06 | 支撑子痫前期和妊娠期高血压疾病不良母婴结局预测的系统综述背景 | DOI: 10.1016/j.eclinm.2024.102861 |
+| PubMed PMID 39084814 | https://pubmed.ncbi.nlm.nih.gov/39084814/ | 2026-06-06 | 支撑子痫前期和妊娠期高血压疾病更新综述背景，提醒不能依赖单项检验结果 | DOI: 10.1016/j.ecl.2024.05.012 |
 | 胡吉霞等 2022 中文临床研究 | https://lcbl.amegroups.com/article/view/46600 | 2026-06-06 | 核验中文早发型子痫前期 sFlt-1/PlGF 比值预测研究 | DOI: 10.3978/j.issn.2095-6959.2022.03.015 |
 | 杨岚等 2024 中文临床研究 | https://cjournal.hep.com.cn/0253-3626/CN/1160148271319671544 | 2026-06-06 | 核验 PLGF、SFLT-1、GLYFN 联合预测子痫前期中文研究 | DOI: 10.13406/j.cnki.cyxb.003412 |
 | 刘鹏等 2026 中文临床研究 | https://www.obgyncn.com/CN/10.13390/j.issn.1672-1861.2026.03.003 | 2026-06-06 | 记录最新中文 PlGF、sFlt-1 早发型重度子痫前期临床意义研究线索 | DOI: 10.13390/j.issn.1672-1861.2026.03.003，需全文核实摘要细节 |

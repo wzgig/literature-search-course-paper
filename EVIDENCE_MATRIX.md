@@ -36,7 +36,7 @@
 | 候选 | PMID: 35275947 | Aminuddin et al., 2022, PLoS One | 临床可行性研究 | 支撑中高风险孕妇中 sFlt-1/PlGF 比值预测不良妊娠结局的可行性 | 第 4 章 |
 | 候选 | PMID: 26404264 | Wu et al., 2015, Int J Mol Sci | 系统综述与 Meta 分析 | 支撑早孕期生物标志物证据背景，注意年代较早 | 第 2 章 |
 | 候选 | PMID: 35952596 | Chen et al., 2022, Placenta | 系统综述与 Meta 分析 | 与胎儿生长受限相关，可用于说明 sFlt-1/PlGF 的相关但非主线应用 | 第 5 章 |
-| 待核 | PMID: 39084814 | Rosenberg and Seely, 2024, Endocrinol Metab Clin North Am | 临床更新综述 | 用于概述子痫前期和妊娠期高血压疾病总体背景 | 引言 |
+| 候选 | PMID: 39084814 | Rosenberg and Seely, 2024, Endocrinol Metab Clin North Am | 临床更新综述 | PubMed 元数据已核验；用于概述子痫前期和妊娠期高血压疾病总体背景 | 第 5 章、结论 |
 | 待核 | PMID: 38674114 | Chiang et al., 2024, Int J Mol Sci | 机制系统综述 | 用于机制背景，但需避免论文偏离临床检验应用 | 第 2 章 |
 
 ## 3. 中文文献线索

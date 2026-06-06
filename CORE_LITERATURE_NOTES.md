@@ -21,6 +21,15 @@
 | Lafuente-Ganuza et al., 2020, Clin Chem Lab Med, PMID: 31734648 | DOI: 10.1515/cclm-2019-0939；https://pubmed.ncbi.nlm.nih.gov/31734648/ | 回顾性队列研究；使用 sFlt-1/PlGF 与 NT-proBNP 优化 rule-in/rule-out | 摘要提示单用 sFlt-1/PlGF 可能存在较多假阳性，联合 NT-proBNP 可改进排除和纳入判断 | 用于局限性与未来方向：比值不是孤立指标，可与其他生物标志物/临床参数联合 |
 | Bremner et al., 2022, Pregnancy Hypertens, PMID: 34979346 | DOI: 10.1016/j.preghy.2021.12.008；https://pubmed.ncbi.nlm.nih.gov/34979346/ | 前瞻性队列样本分析；DELFIA Xpress PlGF 与 sFlt-1 检测 | 369 份疑似或确诊子痫前期样本；验证 PlGF <50 pg/mL rule-in、≥150 pg/mL rule-out 等阈值表现 | 用于方法学章节：不同平台、不同阈值和报告方式会影响临床解释 |
 
+## 1.1 英文补充证据元数据核验
+
+| 文献 | DOI/链接 | 核验信息 | 可写入论文的论点 |
+| --- | --- | --- | --- |
+| Stepan et al., 2020, Hypertension, PMID: 32063058 | DOI: 10.1161/HYPERTENSIONAHA.119.13763；https://pubmed.ncbi.nlm.nih.gov/32063058/ | PubMed ESummary 核验题名、期刊、年份、卷期和页码：75(4): 918-926 | 支撑多标志物联合和“血管生成-胎盘综合征”框架，说明未来研究不应局限于单一指标 |
+| Aminuddin et al., 2022, PLoS One, PMID: 35275947 | DOI: 10.1371/journal.pone.0265080；https://pubmed.ncbi.nlm.nih.gov/35275947/ | PubMed ESummary 核验题名、期刊、年份、卷期和文章号：17(3): e0265080 | 支撑中高风险孕妇中 sFlt-1/PlGF 比值预测子痫前期和不良妊娠结局的可行性讨论 |
+| Bucher et al., 2024, EClinicalMedicine, PMID: 39391014 | DOI: 10.1016/j.eclinm.2024.102861；https://pubmed.ncbi.nlm.nih.gov/39391014/ | PubMed ESummary 核验题名、期刊、年份、卷号和文章号：76: 102861 | 支撑不良母婴结局预测模型证据正在增加，但模型、终点和人群存在异质性 |
+| Rosenberg and Seely, 2024, Endocrinol Metab Clin North Am, PMID: 39084814 | DOI: 10.1016/j.ecl.2024.05.012；https://pubmed.ncbi.nlm.nih.gov/39084814/ | PubMed ESummary 核验题名、期刊、年份、卷期和页码：53(3): 377-389 | 支撑子痫前期和妊娠期高血压疾病管理需要综合病理机制、母体风险和临床监测 |
+
 ## 2. 中文证据与国内应用线索
 
 | 文献 | 链接 | 设计与对象 | 关键数据 | 当前判断 |

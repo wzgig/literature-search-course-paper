@@ -308,3 +308,33 @@
   - `Measure-Object` 粗略统计全文约 23841 个字符，已明显超过任务书 5000 字下限。
   - `git diff --check` 未发现空白或格式错误。
 - git 状态：本次记录添加后需要提交并推送。
+
+## 2026-06-06 补充参考文献核验与来源同步
+
+- 操作者：Codex
+- 工作目标：解决当前临时参考文献仅 14 条、低于高分规划 15 篇以上目标的问题，补充并核验适合支撑未来方向和结局预测讨论的 PubMed 文献。
+- 修改文件：
+  - `COURSE_PAPER_DRAFT.md`
+  - `SOURCES.md`
+  - `CORE_LITERATURE_NOTES.md`
+  - `EVIDENCE_MATRIX.md`
+  - `LITERATURE_SEARCH_RECORD.md`
+  - `PROJECT_PROGRESS.md`
+- 使用来源：
+  - NCBI E-utilities `esummary.fcgi?db=pubmed&retmode=json`
+  - PubMed PMID 32063058, 35275947, 39391014, 39084814
+  - 候选核验 PMID 38674114, 26404264
+- 工作内容：
+  - 将 `COURSE_PAPER_DRAFT.md` 更新为 v0.6。
+  - 在第 5.5 节补充多标志物联合、风险评估、不良母婴结局预测和综合管理相关讨论。
+  - 将临时参考文献从 14 条扩展为 18 条。
+  - 在 `SOURCES.md` 新增 4 条 PubMed 来源记录。
+  - 在 `CORE_LITERATURE_NOTES.md` 新增补充证据元数据核验表。
+  - 在 `LITERATURE_SEARCH_RECORD.md` 记录本次 PubMed ESummary 核验过程。
+- 验证结果：
+  - `COURSE_PAPER_DRAFT.md` 已更新到 `版本：v0.6`。
+  - 临时参考文献数量由 14 条增至 18 条。
+  - 已在正文中检索到新增引用 `[15]` 至 `[18]`。
+  - 已在 `SOURCES.md` 检索到新增 PMID 32063058、35275947、39391014、39084814。
+  - `git diff --check` 未发现空白或格式错误。
+- git 状态：本次记录添加后需要提交并推送。
