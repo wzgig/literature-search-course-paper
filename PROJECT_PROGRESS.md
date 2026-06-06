@@ -364,3 +364,36 @@
   - `Measure-Object` 粗略统计全文约 28038 个字符。
   - `git diff --check` 未发现空白或格式错误。
 - git 状态：本次记录添加后需要提交并推送。
+
+## 2026-06-06 Word 草稿生成与渲染检查
+
+- 操作者：Codex
+- 工作目标：将课程论文 Markdown 初稿转换为 Word 草稿，并进行渲染检查，发现并修复宽表直接转换导致的表格不可读问题。
+- 修改或新增文件：
+  - `COURSE_PAPER_DRAFT.md`
+  - `COURSE_PAPER_DRAFT.docx`
+  - `scripts/build_course_paper_docx.py`
+  - `TOOLING.md`
+  - `SOURCES.md`
+  - `PROJECT_PROGRESS.md`
+- 工具与依赖：
+  - Pandoc 3.9.0.2
+  - LibreOffice 26.2.3.2
+  - Python `pdf2image` 1.17.0
+  - Poppler 工具 `pdftoppm`、`pdfinfo`
+  - `documents` skill 的 DOCX 渲染检查原则
+- 工作内容：
+  - 将 `COURSE_PAPER_DRAFT.md` 更新为 v0.8，压缩三张宽表的列数和文字长度。
+  - 新增 `scripts/build_course_paper_docx.py`，用于稳定生成 `COURSE_PAPER_DRAFT.docx`。
+  - 构建脚本先用课程 `.doc` 模板生成 Pandoc reference docx，再把 Markdown 表格替换为真实 Word 表格，避免宽表直接转换后出现空表格或散列文本。
+  - 生成 `COURSE_PAPER_DRAFT.docx`。
+  - 使用 LibreOffice 导出临时 PDF，并用 Poppler 渲染每页 PNG 做视觉检查。
+- 验证结果：
+  - DOCX 成功生成，文件大小约 54 KB。
+  - PDF 渲染为 16 页 A4 页面。
+  - 已检查缩略总览、表 1 起始页和续页、表 2 起始页和续页、表 3 与路径图页、参考文献末页。
+  - 三张表格均已成为真实 Word 表格，带边框和表头；未见文本遮挡、截断或空白末页。
+  - 提交前用 `python-docx` 抽取 `COURSE_PAPER_DRAFT.docx` 文本并检索“姓名、学号、班级、联系方式、电话、身份证”等关键词，未发现个人信息。
+  - `git diff --check` 未发现空白或格式错误。
+  - `documents` skill 的原始 `render_docx.py` 在本机 Windows 下默认调用 `soffice.exe` 转 PDF 失败；已改用 `soffice.com` 手动导出 PDF 和 Poppler 渲染 PNG 完成等效视觉 QA。
+- git 状态：本次记录添加后需要提交并推送。

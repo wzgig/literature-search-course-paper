@@ -8,6 +8,7 @@
 | --- | --- | --- | --- | --- | --- |
 | LibreOffice | 26.2.3.2 | `winget install --id TheDocumentFoundation.LibreOffice --exact` | `C:\Program Files\LibreOffice\program\soffice.com` | 渲染、转换和检查 Word 文档；支持 `.doc`、`.docx` 到 PDF/图片等工作流 | 安装器提示需要重启电脑以完成集成 |
 | Pandoc | 3.9.0.2 | `winget install --id JohnMacFarlane.Pandoc --exact` | `C:\Users\Zicheng Wang\AppData\Local\Pandoc\pandoc.exe` | Markdown、DOCX、HTML、PDF 等格式转换；辅助生成写作草稿和参考文献格式材料 | 当前 shell 可通过临时 PATH 调用；新终端通常会自动读取安装后的 PATH |
+| pdf2image | 1.17.0 | `python -m pip install pdf2image` | `D:\Software\Python312\Lib\site-packages` | 支撑 `documents` 渲染脚本和 PDF 页面图片检查流程 | Poppler 由 TeX Live 提供，`pdftoppm` 和 `pdfinfo` 已在 PATH 中 |
 
 验证命令：
 
@@ -21,6 +22,25 @@ Smoke test：
 
 - LibreOffice 已成功将课程任务书 `.docx` 转换为临时 PDF：`%TEMP%\course-paper-tooling-check\文献检索与论文写作课程论文任务书(1).pdf`。
 - Pandoc 已成功将 `README.md` 转换为临时 HTML：`%TEMP%\course-paper-tooling-check\README.html`。
+
+## 项目构建脚本
+
+| 脚本 | 用途 | 说明 |
+| --- | --- | --- |
+| `scripts/build_course_paper_docx.py` | 从 `COURSE_PAPER_DRAFT.md` 生成 `COURSE_PAPER_DRAFT.docx` | 先用课程 Word 模板生成 Pandoc reference docx，再将 Markdown 表格替换为真实 Word 表格，避免宽表直接转换导致排版不可读 |
+
+推荐生成命令：
+
+```powershell
+python .\scripts\build_course_paper_docx.py
+```
+
+推荐渲染检查流程：
+
+```powershell
+& 'C:\Program Files\LibreOffice\program\soffice.com' --headless --norestore --convert-to pdf --outdir $env:TEMP .\COURSE_PAPER_DRAFT.docx
+pdftoppm -png -r 120 <pdf-path> <output-prefix>
+```
 
 ## 已安装或可用 Codex 技能
 

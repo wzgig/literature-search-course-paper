@@ -56,6 +56,8 @@
 | --- | --- | --- | --- | --- |
 | LibreOffice winget package | `winget install --id TheDocumentFoundation.LibreOffice --exact` | 2026-06-06 | 安装 LibreOffice，用于 Word 文档转换、渲染和排版检查 | 安装版本 26.2.3.2，安装器提示需重启电脑 |
 | Pandoc winget package | `winget install --id JohnMacFarlane.Pandoc --exact` | 2026-06-06 | 安装 Pandoc，用于 Markdown/DOCX/HTML/PDF 等格式转换 | 安装版本 3.9.0.2 |
+| PyPI `pdf2image` package | https://pypi.org/project/pdf2image/ | 2026-06-06 | 安装 PDF 页面图片渲染依赖，配合 LibreOffice、Poppler 和 `documents` skill 做 DOCX 视觉 QA | 安装版本 1.17.0；命令：`python -m pip install pdf2image` |
+| Project DOCX build script | `scripts/build_course_paper_docx.py` | 2026-06-06 | 将 Markdown 初稿转换为带真实 Word 表格的 `COURSE_PAPER_DRAFT.docx` | 本地项目脚本，使用 Pandoc、LibreOffice 和 python-docx |
 | OpenAI curated skill `openai-docs` | `python ...\install-skill-from-github.py --repo openai/skills --path skills/.curated/openai-docs` | 2026-06-06 | 安装 OpenAI 官方文档查询技能 | 需要重启 Codex 后生效 |
 | skills.sh search | `npx skills find academic writing/literature review/citation bibtex/paper writing/docx document` | 2026-06-06 | 搜索适合论文写作、文献综述和引用管理的外部技能 | 低可信或重复技能未安装 |
 | `citation-management` external skill | `npx skills add davila7/claude-code-templates@citation-management -g -y` | 2026-06-06 | 安装引用管理技能，用于 DOI/PMID/BibTeX 元数据整理和校验 | 安装到 `C:\Users\Zicheng Wang\.agents\skills\citation-management` |
