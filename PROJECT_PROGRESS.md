@@ -397,3 +397,39 @@
   - `git diff --check` 未发现空白或格式错误。
   - `documents` skill 的原始 `render_docx.py` 在本机 Windows 下默认调用 `soffice.exe` 转 PDF 失败；已改用 `soffice.com` 手动导出 PDF 和 Poppler 渲染 PNG 完成等效视觉 QA。
 - git 状态：本次记录添加后需要提交并推送。
+
+## 2026-06-06 课程论文 Word 正式排版提升
+
+- 操作者：Codex
+- 工作目标：详细阅读当前项目文件夹、理解课程论文内容和模板要求，将已有 Markdown 草稿提升为标准课程论文 Word 正式版，并进行更高标准的版式优化。
+- 修改或新增文件：
+  - `COURSE_PAPER_FORMATTED.docx`
+  - `scripts/build_course_paper_docx.py`
+  - `README.md`
+  - `TOOLING.md`
+  - `.gitignore`
+  - `PROJECT_PROGRESS.md`
+- 工作内容：
+  - 读取 `PROJECT_PROGRESS.md`、`SOURCES.md`、`README.md`、课程任务书、课程模板、`COURSE_PAPER_DRAFT.md` 和原 Word 草稿结构。
+  - 将生成脚本改造为正式版 Word 生成器，输出 `COURSE_PAPER_FORMATTED.docx`，保留旧 `COURSE_PAPER_DRAFT.docx` 作为草稿对照。
+  - 按中文课程论文风格生成封面、目录、摘要、正文、表格、流程图、结论和参考文献；去除“初稿/版本/说明”等草稿提示。
+  - 统一 A4 页面、页边距、中文/英文字体、标题层级、正文缩进、行距、页眉、页码、表格宽度、表头重复、单元格内边距和参考文献悬挂缩进。
+  - 将“图 1”从纯文字流程改为 Word 表格化流程图，提高图表可读性。
+- 使用来源：
+  - `文献检索与论文写作课程论文任务书(1).docx`
+  - `文献检索与论文写作结课论文模板-(1).doc`
+  - `COURSE_PAPER_DRAFT.md`
+  - `LITERATURE_SEARCH_RECORD.md`
+  - `EVIDENCE_MATRIX.md`
+  - `CORE_LITERATURE_NOTES.md`
+  - 已记录于 `SOURCES.md` 的指南、PubMed 和中文临床研究来源。
+- 验证结果：
+  - `python .\scripts\build_course_paper_docx.py` 成功生成 `COURSE_PAPER_FORMATTED.docx`。
+  - LibreOffice 成功导出临时 PDF，`pdfinfo` 显示 41 页 A4。
+  - Poppler 成功渲染 41 张 PNG，自动检查未发现近似空白页。
+  - 已人工查看封面、目录、表格页、流程图页和参考文献页 PNG，未见乱码、裁切、重叠、表格溢出或空白页。
+  - 目录页码已按正文实际页码写入；正文页眉和页码渲染正常。
+  - DOCX 元数据作者为空；封面姓名和学号为待填写空白字段，未写入实际个人信息。
+  - `python -m py_compile .\scripts\build_course_paper_docx.py` 通过。
+  - `git diff --check` 未发现空白或格式错误。
+- git 状态：本次记录将与正式 Word 文件一并提交并推送到 `origin/main`；如推送失败，将追加记录阻塞原因。

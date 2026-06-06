@@ -27,7 +27,7 @@ Smoke test：
 
 | 脚本 | 用途 | 说明 |
 | --- | --- | --- |
-| `scripts/build_course_paper_docx.py` | 从 `COURSE_PAPER_DRAFT.md` 生成 `COURSE_PAPER_DRAFT.docx` | 先用课程 Word 模板生成 Pandoc reference docx，再将 Markdown 表格替换为真实 Word 表格，避免宽表直接转换导致排版不可读 |
+| `scripts/build_course_paper_docx.py` | 从 `COURSE_PAPER_DRAFT.md` 生成 `COURSE_PAPER_FORMATTED.docx` | 使用课程 Word 模板作为样式基础，自动生成封面、静态目录、正文、真实 Word 表格、流程图、页眉页码和参考文献悬挂缩进 |
 
 推荐生成命令：
 
@@ -38,7 +38,7 @@ python .\scripts\build_course_paper_docx.py
 推荐渲染检查流程：
 
 ```powershell
-& 'C:\Program Files\LibreOffice\program\soffice.com' --headless --norestore --convert-to pdf --outdir $env:TEMP .\COURSE_PAPER_DRAFT.docx
+& 'C:\Program Files\LibreOffice\program\soffice.com' --headless --norestore --convert-to pdf --outdir $env:TEMP .\COURSE_PAPER_FORMATTED.docx
 pdftoppm -png -r 120 <pdf-path> <output-prefix>
 ```
 
