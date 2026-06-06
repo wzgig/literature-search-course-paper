@@ -206,3 +206,28 @@
   - `CORE_LITERATURE_NOTES.md` 已形成引言背景、机制基础、检测与报告、预测与排除价值、国内应用、局限与展望 6 条证据链。
   - `EVIDENCE_MATRIX.md` 已扩展至英文核心研究、医学检验相关研究和中文临床研究分层。
 - git 状态：本次记录添加后需要提交并推送。
+
+## 2026-06-06 详细大纲与课程论文初稿启动
+
+- 操作者：Codex
+- 工作目标：根据任务规划、证据矩阵和核心文献精读笔记，进入论文写作阶段，形成详细章节大纲并启动课程论文初稿。
+- 新增或修改文件：
+  - `COURSE_PAPER_DETAILED_OUTLINE.md`
+  - `COURSE_PAPER_DRAFT.md`
+  - `README.md`
+  - `PROJECT_PROGRESS.md`
+- 写作内容：
+  - `COURSE_PAPER_DETAILED_OUTLINE.md` 明确全文章节、建议字数、段落级写作提纲、图表计划和写作风险控制。
+  - `COURSE_PAPER_DRAFT.md` 已完成题目、英文题名、中文摘要、关键词、英文摘要、英文关键词、引言和第 1 章“文献检索策略与筛选过程”初稿。
+  - 初稿引用采用临时顺序编码，后续需按课程模板和最终参考文献表统一校对。
+- 使用证据：
+  - NICE PLGF-based testing guidance。
+  - Zeisler et al. 2016 PROGNOSIS study。
+  - Zhang et al. 2025 systematic review and meta-analysis。
+  - Zhao et al. 2017 dual-cutoff meta-analysis。
+  - Espinoza et al. 2024 MoM risk prediction study。
+  - 胡吉霞等 2022 中文临床研究。
+- 验证结果：
+  - 初稿内容与当前题目、任务边界和“不制作 PPT”要求一致。
+  - 引言和检索策略中的关键数据均可在 `CORE_LITERATURE_NOTES.md`、`EVIDENCE_MATRIX.md` 或 `LITERATURE_SEARCH_RECORD.md` 中追溯。
+- git 状态：本次记录添加后需要提交并推送。

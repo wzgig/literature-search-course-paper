@@ -25,6 +25,8 @@ GitHub 仓库地址：https://github.com/wzgig/literature-search-course-paper
 | `TOOLING.md` | 本地工具与技能配置记录 |
 | `SKILL_PLUGIN_EVALUATION.md` | 课程论文/毕业设计相关技能和插件筛选评价 |
 | `COURSE_PAPER_TASK_PLAN.md` | 高分导向的课程论文任务规划 |
+| `COURSE_PAPER_DETAILED_OUTLINE.md` | 课程论文详细大纲、证据分配和图表计划 |
+| `COURSE_PAPER_DRAFT.md` | 课程论文 Markdown 初稿 |
 | `TOPIC_DUPLICATE_CHECK.md` | 当前题目与选题表的查重记录 |
 | `LITERATURE_SEARCH_RECORD.md` | 文献检索式、检索结果和筛选过程记录 |
 | `EVIDENCE_MATRIX.md` | 核心文献证据矩阵 |
