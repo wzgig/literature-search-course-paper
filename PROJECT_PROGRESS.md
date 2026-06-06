@@ -284,3 +284,27 @@
   - 第 5 章进一步强调 sFlt-1/PlGF 比值不能替代临床诊断，核心定位仍为辅助评估、短期排除和风险分层。
   - 章节已突出医学检验技术专业职责，包括检验前、中、后质量控制和报告解释边界。
 - git 状态：本次记录添加后需要提交并推送。
+
+## 2026-06-06 课程论文第 6 章与结论初稿
+
+- 操作者：Codex
+- 工作目标：继续课程论文正文写作，完成“文献检索与论文写作反思”和“结论”初稿，使课程论文初稿形成完整闭环。
+- 修改文件：
+  - `COURSE_PAPER_DRAFT.md`
+  - `PROJECT_PROGRESS.md`
+- 写作内容：
+  - 将 `COURSE_PAPER_DRAFT.md` 版本更新为 v0.5。
+  - 新增第 6 章“文献检索与论文写作反思”，围绕中英文关键词优化、布尔检索、指南与核心研究分层、证据等级判断、医学检验专业切入点、引用核验和学术伦理展开。
+  - 新增“结论”，总结 sFlt-1/PlGF 比值在疑似子痫前期短期排除、风险分层和辅助判断中的应用价值，并强调其不能替代临床综合诊断。
+- 使用来源：
+  - `COURSE_PAPER_TASK_PLAN.md`
+  - `COURSE_PAPER_DETAILED_OUTLINE.md`
+  - `LITERATURE_SEARCH_RECORD.md`
+  - `EVIDENCE_MATRIX.md`
+  - `CORE_LITERATURE_NOTES.md`
+  - 已记录于 `SOURCES.md` 的 NICE、ISSHP、PROGNOSIS、PubMed 核心文献和中文临床研究来源。
+- 验证结果：
+  - 已确认 `COURSE_PAPER_DRAFT.md` 包含 `版本：v0.5`、第 6 章、结论和临时参考文献。
+  - `Measure-Object` 粗略统计全文约 23841 个字符，已明显超过任务书 5000 字下限。
+  - `git diff --check` 未发现空白或格式错误。
+- git 状态：本次记录添加后需要提交并推送。
