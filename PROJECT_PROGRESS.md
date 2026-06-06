@@ -432,4 +432,4 @@
   - DOCX 元数据作者为空；封面姓名和学号为待填写空白字段，未写入实际个人信息。
   - `python -m py_compile .\scripts\build_course_paper_docx.py` 通过。
   - `git diff --check` 未发现空白或格式错误。
-- git 状态：本次记录将与正式 Word 文件一并提交并推送到 `origin/main`；如推送失败，将追加记录阻塞原因。
+- git 状态：正式 Word 排版提升已提交并推送到 `origin/main`，提交哈希 `01311c4`，提交信息 `docs: format course paper word draft`；本条 git 状态修正将随后单独提交并推送。
