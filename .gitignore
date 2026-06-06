@@ -1,0 +1,19 @@
+# Word/Excel temporary files
+~$*.doc
+~$*.docx
+~$*.xls
+~$*.xlsx
+
+# Contains student names and IDs; keep local unless explicitly approved for publication
+文献检索结课论文选题表.xlsx
+
+# Common temporary/cache files
+*.tmp
+*.temp
+*.bak
+.DS_Store
+Thumbs.db
+
+# Local editor folders
+.vscode/
+.idea/
