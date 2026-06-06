@@ -23,8 +23,11 @@ GitHub 仓库地址：https://github.com/wzgig/literature-search-course-paper
 | `PROJECT_PROGRESS.md` | 项目进展记录 |
 | `SOURCES.md` | 数据、网页和文献来源记录 |
 | `TOOLING.md` | 本地工具与技能配置记录 |
+| `SKILL_PLUGIN_EVALUATION.md` | 课程论文/毕业设计相关技能和插件筛选评价 |
 | `COURSE_PAPER_TASK_PLAN.md` | 高分导向的课程论文任务规划 |
 | `TOPIC_DUPLICATE_CHECK.md` | 当前题目与选题表的查重记录 |
+| `LITERATURE_SEARCH_RECORD.md` | 文献检索式、检索结果和筛选过程记录 |
+| `EVIDENCE_MATRIX.md` | 核心文献证据矩阵 |
 
 ## 工作规则
 
@@ -32,7 +35,7 @@ GitHub 仓库地址：https://github.com/wzgig/literature-search-course-paper
 
 ## 本地工具
 
-当前已配置 LibreOffice、Pandoc、`openai-docs` 和 `citation-management` 等工具/技能。具体版本、路径、用途和注意事项见 `TOOLING.md`。
+当前已配置 LibreOffice、Pandoc、`openai-docs`、`citation-management`、`academic-paper`、`academic-paper-reviewer`、`academic-pipeline` 和 `deep-research` 等工具/技能。具体版本、路径、用途和注意事项见 `TOOLING.md` 与 `SKILL_PLUGIN_EVALUATION.md`。
 
 ## 隐私提示
 

@@ -132,3 +132,52 @@
   - `SOURCES.md` 已新增当前最终选题的初始权威来源，包括 NICE 指导、NEJM PROGNOSIS 研究、ISSHP 指南和综述文献。
 - 验证结果：当前题目与选题表不重复；任务规划已只保留课程论文写作相关工作。
 - git 状态：本次记录添加后需要提交并推送。
+
+## 2026-06-06 课程论文与毕业设计相关技能/插件筛选安装
+
+- 操作者：Codex
+- 工作目标：根据用户要求，全网搜索并评价适合大学生课程结课论文、毕业设计、文献综述、学术写作、引用管理和论文审校的 skills/插件，安装高质量且适配本项目的技能。
+- 新增或修改文件：
+  - `SKILL_PLUGIN_EVALUATION.md`
+  - `TOOLING.md`
+  - `README.md`
+  - `SOURCES.md`
+  - `PROJECT_PROGRESS.md`
+- 检索与评价：
+  - 使用 `npx skills find` 搜索 `thesis dissertation academic writing`、`graduation thesis`、`medical research writing`、`systematic literature review medical`、`academic paper audit`、`docx thesis word`、`bibliography reference management academic`。
+  - 使用 GitHub CLI 核查候选仓库质量，例如 `Imbad0202/academic-research-skills` 约 27.7K stars、`bytedance/deer-flow` 约 70K stars、`endigo/claude-skills` 约 7 stars。
+  - 对比后，安装 `imbad0202/academic-research-skills` 的 `academic-paper`、`academic-paper-reviewer`、`academic-pipeline`、`deep-research`。
+  - 暂缓安装 `endigo/academic-research-writer`、`bytedance/deer-flow@systematic-literature-review`、外部 `literature-review`、低安装量 citation/bibliography 小技能和 thesis/docx 模板类技能，原因见 `SKILL_PLUGIN_EVALUATION.md`。
+- 安装路径：
+  - `C:\Users\Zicheng Wang\.agents\skills\academic-paper`
+  - `C:\Users\Zicheng Wang\.agents\skills\academic-paper-reviewer`
+  - `C:\Users\Zicheng Wang\.agents\skills\academic-pipeline`
+  - `C:\Users\Zicheng Wang\.agents\skills\deep-research`
+- 验证结果：
+  - `Test-Path` 确认四个技能的 `SKILL.md` 均存在。
+  - `npx --yes skills list -g --json` 可列出四个技能。
+  - 安装器显示 Codex 本地副本已复制；PromptScript 全局安装阶段提示不支持全局安装，不影响 Codex 本地技能副本存在。
+  - 安装器安全扫描显示 Gen Safe、Socket 0 alerts；部分技能 Snyk Med Risk，后续调用脚本前需审查具体脚本行为。
+- git 状态：本次记录添加后需要提交并推送。
+
+## 2026-06-06 论文英文文献初检与证据矩阵建立
+
+- 操作者：Codex
+- 工作目标：按 `COURSE_PAPER_TASK_PLAN.md` 开始第一步论文工作，建立正式文献检索记录和核心证据矩阵。
+- 新增或修改文件：
+  - `LITERATURE_SEARCH_RECORD.md`
+  - `EVIDENCE_MATRIX.md`
+  - `README.md`
+  - `SOURCES.md`
+  - `PROJECT_PROGRESS.md`
+- 检索记录：
+  - PubMed 宽检索：`("sFlt-1/PlGF ratio" OR "sFlt-1:PlGF ratio" OR "soluble fms-like tyrosine kinase-1" OR "placental growth factor") AND (preeclampsia OR pre-eclampsia)`，结果 2305 条，记录首批 40 个 PMID。
+  - PubMed 系统综述/Meta 检索：`("sFlt-1/PlGF" OR "PlGF") AND (preeclampsia OR pre-eclampsia) AND (systematic review OR meta-analysis)`，结果 47 条，记录首批 20 个 PMID。
+  - PubMed 临床应用/实施检索：`("sFlt-1/PlGF ratio") AND (preeclampsia OR pre-eclampsia) AND (clinical utility OR implementation OR decision-making OR rule out)`，结果 135 条，记录首批 20 个 PMID。
+- 初步核心证据：
+  - 已将 NICE PLGF-based testing guidance、ISSHP 2021 guideline、NEJM PROGNOSIS study、2025 sFlt-1/PlGF 预测性能系统综述与 Meta 分析、2023 临床应用综述、2022 临床解释与实施综述等列入 `EVIDENCE_MATRIX.md`。
+  - 证据矩阵按指南、英文核心研究与综述、中文线索分层，标注 `核心`、`候选`、`待核`。
+- 验证结果：
+  - 已通过 NCBI E-utilities 返回检索数量、PMID 列表和 ESummary 题名/期刊/作者信息。
+  - 当前仍需继续补充中文数据库检索和核心文献 DOI、样本量、孕周范围、检测平台、截断值、主要结论。
+- git 状态：本次记录添加后需要提交并推送。

@@ -59,3 +59,9 @@
 | OpenAI curated skill `openai-docs` | `python ...\install-skill-from-github.py --repo openai/skills --path skills/.curated/openai-docs` | 2026-06-06 | 安装 OpenAI 官方文档查询技能 | 需要重启 Codex 后生效 |
 | skills.sh search | `npx skills find academic writing/literature review/citation bibtex/paper writing/docx document` | 2026-06-06 | 搜索适合论文写作、文献综述和引用管理的外部技能 | 低可信或重复技能未安装 |
 | `citation-management` external skill | `npx skills add davila7/claude-code-templates@citation-management -g -y` | 2026-06-06 | 安装引用管理技能，用于 DOI/PMID/BibTeX 元数据整理和校验 | 安装到 `C:\Users\Zicheng Wang\.agents\skills\citation-management` |
+| skills.sh/GitHub academic skill search | `npx skills find thesis dissertation academic writing/systematic literature review medical/academic paper audit/bibliography reference management academic` | 2026-06-06 | 全网筛选课程论文、毕业设计、文献综述、论文审校和引用管理相关技能 | 评价结果见 `SKILL_PLUGIN_EVALUATION.md` |
+| `imbad0202/academic-research-skills` | https://github.com/Imbad0202/academic-research-skills | 2026-06-06 | 安装 `academic-paper`、`academic-paper-reviewer`、`academic-pipeline`、`deep-research` | 仓库约 27.7K stars，安装到 `C:\Users\Zicheng Wang\.agents\skills\...` |
+| skills.sh details for installed academic skills | https://skills.sh/imbad0202/academic-research-skills | 2026-06-06 | 查看安装技能详情与安全扫描提示 | 安装器提示 Gen Safe、Socket 0 alerts，部分技能 Snyk Med Risk |
+| PubMed broad search for current topic | NCBI E-utilities query in `LITERATURE_SEARCH_RECORD.md` | 2026-06-06 | 建立 sFlt-1/PlGF 与子痫前期主题的英文候选文献池 | 宽检索结果 2305 条，首批 40 个 PMID 已记录 |
+| PubMed systematic review/meta-analysis search | NCBI E-utilities query in `LITERATURE_SEARCH_RECORD.md` | 2026-06-06 | 筛选系统综述与 Meta 分析证据 | 检索结果 47 条，首批 20 个 PMID 已记录 |
+| PubMed clinical utility/implementation search | NCBI E-utilities query in `LITERATURE_SEARCH_RECORD.md` | 2026-06-06 | 筛选临床应用、实施、决策和短期排除相关证据 | 检索结果 135 条，首批 20 个 PMID 已记录 |
