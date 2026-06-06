@@ -22,10 +22,15 @@ GitHub 仓库地址：https://github.com/wzgig/literature-search-course-paper
 | `AGENTS.md` | 项目工作规则 |
 | `PROJECT_PROGRESS.md` | 项目进展记录 |
 | `SOURCES.md` | 数据、网页和文献来源记录 |
+| `TOOLING.md` | 本地工具与技能配置记录 |
 
 ## 工作规则
 
 每次修改、检索、写作或整理文件后，都要更新 `PROJECT_PROGRESS.md`；每次新增资料来源，都要更新 `SOURCES.md`。形成有意义的修改后，应提交 git 并推送到 GitHub。
+
+## 本地工具
+
+当前已配置 LibreOffice、Pandoc、`openai-docs` 和 `citation-management` 等工具/技能。具体版本、路径、用途和注意事项见 `TOOLING.md`。
 
 ## 隐私提示
 

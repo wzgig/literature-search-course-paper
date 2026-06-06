@@ -61,3 +61,32 @@
   - 公开仓库创建成功。
   - 本地 `main` 已跟踪 `origin/main`。
 - git 状态：本次记录添加后需要再次提交并推送。
+
+## 2026-06-06 本地写作工具与技能安装
+
+- 操作者：Codex
+- 工作目标：安装并验证课程论文写作、文档转换、文献检索和参考文献管理所需的本地工具与技能。
+- 新增或修改文件：
+  - `TOOLING.md`
+  - `README.md`
+  - `SOURCES.md`
+  - `PROJECT_PROGRESS.md`
+- 安装工具：
+  - LibreOffice 26.2.3.2，路径 `C:\Program Files\LibreOffice\program\soffice.com`。
+  - Pandoc 3.9.0.2，路径 `C:\Users\Zicheng Wang\AppData\Local\Pandoc\pandoc.exe`。
+- 安装技能：
+  - `openai-docs`，安装到 `C:\Users\Zicheng Wang\.codex\skills\openai-docs`。
+  - `citation-management`，安装到 `C:\Users\Zicheng Wang\.agents\skills\citation-management`。
+- 外部技能筛选：
+  - 使用 `npx skills find` 搜索 `academic writing`、`literature review`、`citation bibtex`、`paper writing`、`docx document`。
+  - 未安装低安装量、来源不明确或与本机已有技能重复的外部技能。
+  - 选择安装 `citation-management`，用于 DOI/PMID/BibTeX 元数据管理和引用校验。
+- 验证结果：
+  - `soffice --headless --version` 可输出 LibreOffice 版本。
+  - `pandoc --version` 可输出 Pandoc 版本。
+  - LibreOffice 已成功将课程任务书 `.docx` 转换为临时 PDF，输出目录 `%TEMP%\course-paper-tooling-check`。
+  - Pandoc 已成功将 `README.md` 转换为临时 HTML，输出目录 `%TEMP%\course-paper-tooling-check`。
+  - LibreOffice 安装器提示需要重启电脑以完成集成。
+  - `openai-docs` 按官方 skill installer 成功安装；新会话或重启 Codex 后生效。
+  - `citation-management` 已复制到本地 skills 目录；安装器同时提示 PromptScript 不支持全局安装，但 Codex 本地技能副本存在。
+- git 状态：本次记录添加后需要提交并推送。

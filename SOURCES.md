@@ -36,3 +36,13 @@
 用于论文位置：
 备注：
 ```
+
+## 工具与技能来源
+
+| 来源 | 链接或命令 | 访问/安装日期 | 用途 | 备注 |
+| --- | --- | --- | --- | --- |
+| LibreOffice winget package | `winget install --id TheDocumentFoundation.LibreOffice --exact` | 2026-06-06 | 安装 LibreOffice，用于 Word 文档转换、渲染和排版检查 | 安装版本 26.2.3.2，安装器提示需重启电脑 |
+| Pandoc winget package | `winget install --id JohnMacFarlane.Pandoc --exact` | 2026-06-06 | 安装 Pandoc，用于 Markdown/DOCX/HTML/PDF 等格式转换 | 安装版本 3.9.0.2 |
+| OpenAI curated skill `openai-docs` | `python ...\install-skill-from-github.py --repo openai/skills --path skills/.curated/openai-docs` | 2026-06-06 | 安装 OpenAI 官方文档查询技能 | 需要重启 Codex 后生效 |
+| skills.sh search | `npx skills find academic writing/literature review/citation bibtex/paper writing/docx document` | 2026-06-06 | 搜索适合论文写作、文献综述和引用管理的外部技能 | 低可信或重复技能未安装 |
+| `citation-management` external skill | `npx skills add davila7/claude-code-templates@citation-management -g -y` | 2026-06-06 | 安装引用管理技能，用于 DOI/PMID/BibTeX 元数据整理和校验 | 安装到 `C:\Users\Zicheng Wang\.agents\skills\citation-management` |
