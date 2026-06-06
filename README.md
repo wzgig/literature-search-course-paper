@@ -6,11 +6,11 @@ GitHub 仓库地址：https://github.com/wzgig/literature-search-course-paper
 
 ## 项目主题
 
-拟定课程论文题目：
+当前拟定课程论文题目：
 
-> 血清肌酐-胱抑素C联合估算肾小球滤过率与尿白蛋白/肌酐比值在慢性肾脏病分期中的应用进展
+> 可溶性fms样酪氨酸激酶-1/胎盘生长因子比值在子痫前期早期预测中的临床检验应用进展
 
-该题目面向医学检验技术专业，聚焦慢性肾脏病分期中的检验指标应用，适合写作文献综述型课程论文。
+该题目面向医学检验技术专业，聚焦 sFlt-1/PlGF 比值检测在子痫前期早期预测中的临床检验应用，适合写作文献综述型课程论文，且已核对当前选题表未重复。
 
 ## 当前文件
 
@@ -24,6 +24,7 @@ GitHub 仓库地址：https://github.com/wzgig/literature-search-course-paper
 | `SOURCES.md` | 数据、网页和文献来源记录 |
 | `TOOLING.md` | 本地工具与技能配置记录 |
 | `COURSE_PAPER_TASK_PLAN.md` | 高分导向的课程论文任务规划 |
+| `TOPIC_DUPLICATE_CHECK.md` | 当前题目与选题表的查重记录 |
 
 ## 工作规则
 

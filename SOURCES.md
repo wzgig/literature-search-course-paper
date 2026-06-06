@@ -11,7 +11,20 @@
 | `文献检索结课论文选题表.xlsx` | 选题表 | 2026-06-05 | 确认已登记题目，避免重复选题 | 包含姓名和学号，公开发布前需确认隐私处理 |
 | `文献检索结课论文选题表_公开摘要.md` | 脱敏摘要 | 2026-06-06 | 在公开仓库中保留选题避重依据 | 由原始选题表整理，仅保留选题名称 |
 
-## 初始论文题目依据
+## 当前最终选题依据
+
+当前最终题目：`可溶性fms样酪氨酸激酶-1/胎盘生长因子比值在子痫前期早期预测中的临床检验应用进展`
+
+| 来源 | 链接 | 访问日期 | 用途 | 备注 |
+| --- | --- | --- | --- | --- |
+| NICE PLGF-based testing guidance | https://www.nice.org.uk/guidance/htg630/chapter/1-Recommendations | 2026-06-06 | 支撑 PLGF 或 sFlt-1/PlGF 检测用于疑似早产期子痫前期辅助判断 | 诊断/健康技术指导 |
+| NEJM PROGNOSIS study | https://www.nejm.org/doi/full/10.1056/NEJMoa1414838 | 2026-06-06 | 支撑 sFlt-1/PlGF 比值对疑似子痫前期短期预测和排除价值 | 多中心前瞻性研究 |
+| ISSHP 2021 guideline PDF | https://isshp.org/wp-content/uploads/2023/09/ISSHP-2021-guidelines.pdf | 2026-06-06 | 支撑子痫前期分类、诊断和管理背景 | 国际指南 |
+| Clinical utility review, PubMed PMID 35816445 | https://pubmed.ncbi.nlm.nih.gov/35816445/ | 2026-06-06 | 支撑 sFlt-1、PlGF 及其比值在筛查、预测、诊断和监测中的综述证据 | 综述 |
+| Clinical interpretation and implementation review | https://www.sciencedirect.com/science/article/pii/S2210778921005535 | 2026-06-06 | 支撑 sFlt-1/PlGF 比值在临床解释、门诊评估和入院决策中的应用 | 开放获取综述/专家建议 |
+| 中文临床研究示例 | https://lcbl.amegroups.com/article/view/46600 | 2026-06-06 | 支撑国内中文临床研究检索方向 | 后续需结合 CNKI/万方/SinoMed 继续筛选 |
+
+## 历史初始题目依据（已不作为当前最终选题）
 
 建议题目：`血清肌酐-胱抑素C联合估算肾小球滤过率与尿白蛋白/肌酐比值在慢性肾脏病分期中的应用进展`
 
