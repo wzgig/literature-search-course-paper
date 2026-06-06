@@ -2,6 +2,8 @@
 
 本仓库用于保存《文献检索与论文写作》课程论文相关材料、选题依据、文献来源和写作进展。
 
+GitHub 仓库地址：https://github.com/wzgig/literature-search-course-paper
+
 ## 项目主题
 
 拟定课程论文题目：

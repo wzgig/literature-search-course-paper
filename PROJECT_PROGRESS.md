@@ -36,4 +36,28 @@
   - GitHub CLI 已登录 `wzgig` 账号，可用于创建仓库和推送。
 - 使用来源：本地文件列表、GitHub CLI 状态、`SOURCES.md` 中列出的初始来源。
 - 验证结果：已确认选题表共有 51 条学生记录，其中 45 条已有选题、6 条未填写选题。
-- git 状态：本条记录创建时准备初始化本地仓库。
+- git 状态：已创建初始提交 `676c70d`，提交信息为 `docs: initialize course paper tracking`。
+
+## 2026-06-06 GitHub 公开仓库创建与推送
+
+- 操作者：Codex
+- 工作目标：将项目公开安全版本推送到 GitHub，便于后续查看、同步和继续写作。
+- 涉及文件：
+  - `.gitignore`
+  - `AGENTS.md`
+  - `PROJECT_PROGRESS.md`
+  - `README.md`
+  - `SOURCES.md`
+  - `文献检索与论文写作课程论文任务书(1).docx`
+  - `文献检索与论文写作结课论文模板-(1).doc`
+  - `文献检索结课论文选题表_公开摘要.md`
+- GitHub 仓库：
+  - https://github.com/wzgig/literature-search-course-paper
+- 隐私处理：
+  - 原始 `文献检索结课论文选题表.xlsx` 包含姓名和学号，已通过 `.gitignore` 保持本地保存，不进入公开仓库和公开 git 历史。
+  - 公开仓库使用 `文献检索结课论文选题表_公开摘要.md` 作为脱敏替代材料。
+- 验证结果：
+  - GitHub CLI 登录账号：`wzgig`。
+  - 公开仓库创建成功。
+  - 本地 `main` 已跟踪 `origin/main`。
+- git 状态：本次记录添加后需要再次提交并推送。
