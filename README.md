@@ -28,6 +28,7 @@ GitHub 仓库地址：https://github.com/wzgig/literature-search-course-paper
 | `TOPIC_DUPLICATE_CHECK.md` | 当前题目与选题表的查重记录 |
 | `LITERATURE_SEARCH_RECORD.md` | 文献检索式、检索结果和筛选过程记录 |
 | `EVIDENCE_MATRIX.md` | 核心文献证据矩阵 |
+| `CORE_LITERATURE_NOTES.md` | 核心文献精读笔记和可写入论文的证据链 |
 
 ## 工作规则
 

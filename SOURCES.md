@@ -65,3 +65,13 @@
 | PubMed broad search for current topic | NCBI E-utilities query in `LITERATURE_SEARCH_RECORD.md` | 2026-06-06 | 建立 sFlt-1/PlGF 与子痫前期主题的英文候选文献池 | 宽检索结果 2305 条，首批 40 个 PMID 已记录 |
 | PubMed systematic review/meta-analysis search | NCBI E-utilities query in `LITERATURE_SEARCH_RECORD.md` | 2026-06-06 | 筛选系统综述与 Meta 分析证据 | 检索结果 47 条，首批 20 个 PMID 已记录 |
 | PubMed clinical utility/implementation search | NCBI E-utilities query in `LITERATURE_SEARCH_RECORD.md` | 2026-06-06 | 筛选临床应用、实施、决策和短期排除相关证据 | 检索结果 135 条，首批 20 个 PMID 已记录 |
+| PubMed PMID 39947348 | https://pubmed.ncbi.nlm.nih.gov/39947348/ | 2026-06-06 | 核验 2025 年 sFlt-1、PlGF、sFlt-1/PlGF 预测性能系统综述与 Meta 分析 | DOI: 10.1016/j.jogoh.2025.102925 |
+| PubMed PMID 38825028 | https://pubmed.ncbi.nlm.nih.gov/38825028/ | 2026-06-06 | 核验 2024 年 sFlt-1/PlGF MoM 预测 2 周内重症特征研究 | DOI: 10.1016/j.ajog.2024.05.050 |
+| PubMed PMID 28314983 | https://pubmed.ncbi.nlm.nih.gov/28314983/ | 2026-06-06 | 核验 sFlt-1/PlGF 双截断值系统综述与 Meta 分析 | DOI: 10.1007/s00404-017-4302-3 |
+| PubMed PMID 29214752 | https://pubmed.ncbi.nlm.nih.gov/29214752/ | 2026-06-06 | 核验 Annals of Laboratory Medicine 中 sFlt-1/PlGF 比值临床管理经验研究 | DOI: 10.3343/alm.2018.38.2.95 |
+| PubMed PMID 31734648 | https://pubmed.ncbi.nlm.nih.gov/31734648/ | 2026-06-06 | 核验 Clinical Chemistry and Laboratory Medicine 中 sFlt-1/PlGF 与 NT-proBNP 联合研究 | DOI: 10.1515/cclm-2019-0939 |
+| PubMed PMID 34979346 | https://pubmed.ncbi.nlm.nih.gov/34979346/ | 2026-06-06 | 核验 DELFIA Xpress PlGF 与 sFlt-1:PlGF ratio rule-in/rule-out 阈值研究 | DOI: 10.1016/j.preghy.2021.12.008 |
+| 胡吉霞等 2022 中文临床研究 | https://lcbl.amegroups.com/article/view/46600 | 2026-06-06 | 核验中文早发型子痫前期 sFlt-1/PlGF 比值预测研究 | DOI: 10.3978/j.issn.2095-6959.2022.03.015 |
+| 杨岚等 2024 中文临床研究 | https://cjournal.hep.com.cn/0253-3626/CN/1160148271319671544 | 2026-06-06 | 核验 PLGF、SFLT-1、GLYFN 联合预测子痫前期中文研究 | DOI: 10.13406/j.cnki.cyxb.003412 |
+| 刘鹏等 2026 中文临床研究 | https://www.obgyncn.com/CN/10.13390/j.issn.1672-1861.2026.03.003 | 2026-06-06 | 记录最新中文 PlGF、sFlt-1 早发型重度子痫前期临床意义研究线索 | DOI: 10.13390/j.issn.1672-1861.2026.03.003，需全文核实摘要细节 |
+| SinoMed 中文索引条目 | https://www.sinomed.ac.cn/article.do?ui=2020230157 | 2026-06-06 | 记录“sFlt-1与PlGF比值在预测子痫前期中的应用价值”中文线索 | 需全文核实是否为译介、综述或本土研究 |
