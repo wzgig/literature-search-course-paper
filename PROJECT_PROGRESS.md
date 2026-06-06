@@ -433,3 +433,32 @@
   - `python -m py_compile .\scripts\build_course_paper_docx.py` 通过。
   - `git diff --check` 未发现空白或格式错误。
 - git 状态：正式 Word 排版提升已提交并推送到 `origin/main`，提交哈希 `01311c4`，提交信息 `docs: format course paper word draft`；本条 git 状态修正将随后单独提交并推送。
+
+## 2026-06-06 Word 正式版分页与视觉美观复核
+
+- 操作者：Codex
+- 工作目标：在正式 Word 排版版本基础上，进一步优化分页、美观和表格跨页效果，减少不必要的大块留白，保证目录页码、正文衔接和尾页观感自然。
+- 修改或新增文件：
+  - `COURSE_PAPER_FORMATTED.docx`
+  - `scripts/build_course_paper_docx.py`
+  - `PROJECT_PROGRESS.md`
+- 工作内容：
+  - 将摘要正文与关键词行距微调为更适合单页呈现的 1.25 倍行距，并将摘要正文设为 11.5 磅，避免摘要页过密或溢出。
+  - 在生成脚本中增加可控分页逻辑，仅对 `Abstract`、`引言` 和第 1 章强制另起页，后续章节自然顺排，避免表格尾行或章节标题造成大面积空白页。
+  - 重新生成 `COURSE_PAPER_FORMATTED.docx`，并更新目录页码，使目录对应新版 41 页排版。
+  - 复核表 1、表 2、表 3、流程图、结论和参考文献的跨页与页面留白，确认未出现标题悬空、表格溢出、文字重叠或空白页。
+- 使用来源：
+  - `COURSE_PAPER_FORMATTED.docx`
+  - `COURSE_PAPER_DRAFT.md`
+  - `scripts/build_course_paper_docx.py`
+  - 已记录于 `SOURCES.md` 的课程模板、任务书和论文文献来源；本次未新增外部文献或网页来源，因此未修改 `SOURCES.md`。
+- 验证结果：
+  - `python .\scripts\build_course_paper_docx.py` 成功重新生成正式 Word 文件。
+  - `python -m py_compile .\scripts\build_course_paper_docx.py` 通过。
+  - LibreOffice `soffice.com` 成功导出临时 PDF，`pdfinfo` 显示 41 页 A4，文件大小约 667 KB。
+  - Poppler `pdftoppm` 成功渲染 41 张 PNG；自动页面密度检查仅目录页为低墨迹页，未发现正文近似空白页。
+  - 人工查看总览拼图和关键页面 PNG：封面、目录、摘要、表 1 续页、第 2 章起始、表 2 与第 4 章衔接、流程图、结论和参考文献页均显示正常。
+  - `render_docx.py` 在 Windows 中文路径和 LibreOffice 独立 profile 参数下转换失败；已记录该工具限制，并使用同一 LibreOffice 安装的 `soffice.com` 加 Poppler 完成等价视觉 QA。
+  - DOCX 元数据作者与最后修改者为空；仅保留封面“姓名”“学号”空白标签，未写入实际个人信息、电话、邮箱或身份证信息。
+  - `git diff --check` 未发现空白或格式错误。
+- git 状态：本次分页与视觉美观复核修改已提交并推送到 `origin/main`，提交信息为 `docs: refine word pagination`；推送后用 `git status --short` 验证工作树仅剩未跟踪的本地副本文件。

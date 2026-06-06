@@ -12,7 +12,7 @@ from docx import Document
 from docx.enum.section import WD_SECTION
 from docx.enum.style import WD_STYLE_TYPE
 from docx.enum.table import WD_CELL_VERTICAL_ALIGNMENT, WD_ROW_HEIGHT_RULE, WD_TABLE_ALIGNMENT
-from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_TAB_ALIGNMENT, WD_TAB_LEADER
+from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK, WD_TAB_ALIGNMENT, WD_TAB_LEADER
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Cm, Inches, Pt, RGBColor
@@ -455,12 +455,23 @@ def add_body_paragraph(doc: Document, text: str) -> None:
     set_run_font(run, size=12)
 
 
+def add_abstract_paragraph(doc: Document, text: str) -> None:
+    p = doc.add_paragraph()
+    p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+    p.paragraph_format.first_line_indent = None
+    p.paragraph_format.line_spacing = 1.25
+    p.paragraph_format.space_before = Pt(0)
+    p.paragraph_format.space_after = Pt(0)
+    run = p.add_run(text)
+    set_run_font(run, size=11.5)
+
+
 def add_keyword_paragraph(doc: Document, text: str) -> None:
     p = doc.add_paragraph()
     p.paragraph_format.first_line_indent = None
     p.paragraph_format.space_before = Pt(4)
     p.paragraph_format.space_after = Pt(8)
-    p.paragraph_format.line_spacing = 1.3
+    p.paragraph_format.line_spacing = 1.25
     label, _, rest = text.partition("：")
     if not rest:
         label, _, rest = text.partition(":")
@@ -470,7 +481,7 @@ def add_keyword_paragraph(doc: Document, text: str) -> None:
     label_run = p.add_run(label + sep)
     set_run_font(label_run, size=12, bold=True)
     rest_run = p.add_run(rest)
-    set_run_font(rest_run, size=12)
+    set_run_font(rest_run, size=11.5)
 
 
 def add_reference(doc: Document, text: str) -> None:
@@ -480,7 +491,12 @@ def add_reference(doc: Document, text: str) -> None:
     set_run_font(run, size=10.5)
 
 
-def add_heading(doc: Document, text: str, level: int) -> None:
+def add_heading(doc: Document, text: str, level: int, *, page_break_before: bool = False) -> None:
+    if page_break_before:
+        break_paragraph = doc.add_paragraph()
+        break_paragraph.paragraph_format.space_before = Pt(0)
+        break_paragraph.paragraph_format.space_after = Pt(0)
+        break_paragraph.add_run().add_break(WD_BREAK.PAGE)
     style_name = "Heading 1" if level == 1 else "Heading 2"
     p = doc.add_paragraph(style=style_name)
     p.paragraph_format.keep_with_next = True
@@ -656,9 +672,20 @@ def add_toc(doc: Document, toc_items: list[Element], page_numbers: dict[str, int
 
 
 def add_body(doc: Document, elements: list[Element]) -> None:
+    current_h1 = ""
+    seen_h1 = False
     for element in elements:
         if element.kind == "heading":
-            add_heading(doc, element.text, element.level)
+            if element.level == 1:
+                current_h1 = element.text
+                force_page = seen_h1 and (
+                    element.text in {"Abstract", "引言"}
+                    or re.match(r"^1\s", element.text) is not None
+                )
+                add_heading(doc, element.text, element.level, page_break_before=force_page)
+                seen_h1 = True
+            else:
+                add_heading(doc, element.text, element.level)
         elif element.kind == "table":
             data, widths = TABLES[element.text]
             add_data_table(doc, element.text, data, widths)
@@ -671,6 +698,8 @@ def add_body(doc: Document, elements: list[Element]) -> None:
                 add_reference(doc, element.text)
             elif element.text.startswith("关键词") or element.text.startswith("Keywords"):
                 add_keyword_paragraph(doc, element.text)
+            elif current_h1 in {"摘要", "Abstract"}:
+                add_abstract_paragraph(doc, element.text)
             else:
                 add_body_paragraph(doc, element.text)
 
