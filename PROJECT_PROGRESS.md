@@ -338,3 +338,29 @@
   - 已在 `SOURCES.md` 检索到新增 PMID 32063058、35275947、39391014、39084814。
   - `git diff --check` 未发现空白或格式错误。
 - git 状态：本次记录添加后需要提交并推送。
+
+## 2026-06-06 课程论文图表草稿嵌入
+
+- 操作者：Codex
+- 工作目标：根据高分规划补充课程论文图表，使论文不仅有正文综述，也能展示检索流程、证据分层和医学检验应用路径。
+- 修改文件：
+  - `COURSE_PAPER_DRAFT.md`
+  - `PROJECT_PROGRESS.md`
+- 图表内容：
+  - 将 `COURSE_PAPER_DRAFT.md` 更新为 v0.7。
+  - 在第 1 章后新增“表 1 文献检索与筛选流程概要”。
+  - 在第 3 章后新增“表 2 sFlt-1、PlGF 与 sFlt-1/PlGF 比值比较”。
+  - 在第 4 章后新增“表 3 核心证据矩阵”。
+  - 在第 4 章后新增“图 1 sFlt-1/PlGF 比值辅助临床决策路径（文字版）”。
+- 使用来源：
+  - `LITERATURE_SEARCH_RECORD.md`
+  - `EVIDENCE_MATRIX.md`
+  - `CORE_LITERATURE_NOTES.md`
+  - `COURSE_PAPER_DETAILED_OUTLINE.md`
+  - 已记录于 `SOURCES.md` 的指南、PubMed 和中文临床研究来源。
+- 验证结果：
+  - 已确认 `COURSE_PAPER_DRAFT.md` 包含 `版本：v0.7`。
+  - 已检索到表 1、表 2、表 3 和图 1 标题。
+  - `Measure-Object` 粗略统计全文约 28038 个字符。
+  - `git diff --check` 未发现空白或格式错误。
+- git 状态：本次记录添加后需要提交并推送。
