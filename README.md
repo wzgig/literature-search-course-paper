@@ -23,6 +23,7 @@ GitHub 仓库地址：https://github.com/wzgig/literature-search-course-paper
 | `PROJECT_PROGRESS.md` | 项目进展记录 |
 | `SOURCES.md` | 数据、网页和文献来源记录 |
 | `TOOLING.md` | 本地工具与技能配置记录 |
+| `COURSE_PAPER_TASK_PLAN.md` | 高分导向的课程论文任务规划 |
 
 ## 工作规则
 
