@@ -567,4 +567,4 @@
   - `documents` skill 的 `render_docx.py` 因本机无法定位 LibreOffice 可执行文件失败，已按 skill fallback 使用同一 LibreOffice 安装的 `soffice.com` 加 Poppler 完成等效视觉 QA。
   - DOCX 元数据作者和最后修改者为空；隐私扫描未发现电话、邮箱、身份证、联系方式等真实个人信息；封面仅保留“姓名”“学号”空白占位和班级字段 `25医检专升本`。
   - `git diff --check` 未发现空白或格式错误。
-- git 状态：本次记录添加后需要提交并推送；提交将只包含 MSH3 相关文件和追踪文档，保留上一轮中断遗留的非 MSH3 本地副本不纳入提交。
+- git 状态：MSH3 论文检索、初稿与 Word 正式稿批次已提交并推送到 `origin/main`；提交哈希 `cb7053d`，提交信息为 `docs: draft and format MSH3 gene paper`。本条 git 状态补记将随后单独提交并推送，仍不纳入上一轮中断遗留的非 MSH3 本地副本。
