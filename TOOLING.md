@@ -58,6 +58,7 @@ pdftoppm -png -r 120 <pdf-path> <output-prefix>
 | `academic-paper-reviewer` | 已安装到 `C:\Users\Zicheng Wang\.agents\skills\academic-paper-reviewer` | 论文初稿后进行多视角审稿式检查 |
 | `academic-pipeline` | 已安装到 `C:\Users\Zicheng Wang\.agents\skills\academic-pipeline` | 协调研究、写作、完整性检查、审稿和修改流程 |
 | `deep-research` | 已安装到 `C:\Users\Zicheng Wang\.agents\skills\deep-research` | 补充深度研究、文献综述、事实核查和证据合成流程 |
+| `course-paper-workflow` | 项目内副本位于 `skills/course-paper-workflow/SKILL.md`；全局副本位于 `C:\Users\Zicheng Wang\.codex\skills\course-paper-workflow\SKILL.md` | 复用本项目课程论文工作流：任务书读取、选题查重、文献检索、证据矩阵、论文写作、Word 排版、进展记录和 GitHub 推送 |
 
 ## 外部技能筛选记录
 

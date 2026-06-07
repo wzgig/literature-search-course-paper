@@ -24,6 +24,8 @@ GitHub 仓库地址：https://github.com/wzgig/literature-search-course-paper
 | `SOURCES.md` | 数据、网页和文献来源记录 |
 | `TOOLING.md` | 本地工具与技能配置记录 |
 | `SKILL_PLUGIN_EVALUATION.md` | 课程论文/毕业设计相关技能和插件筛选评价 |
+| `COURSE_PAPER_REUSABLE_WORKFLOW.md` | 可复用课程论文工作流程说明文档 |
+| `skills/course-paper-workflow/SKILL.md` | 可复制到 Codex skills 目录复用的课程论文工作流 skill |
 | `COURSE_PAPER_TASK_PLAN.md` | 高分导向的课程论文任务规划 |
 | `COURSE_PAPER_DETAILED_OUTLINE.md` | 课程论文详细大纲、证据分配和图表计划 |
 | `COURSE_PAPER_DRAFT.md` | 课程论文 Markdown 初稿 |
@@ -40,6 +42,8 @@ GitHub 仓库地址：https://github.com/wzgig/literature-search-course-paper
 ## 本地工具
 
 当前已配置 LibreOffice、Pandoc、`openai-docs`、`citation-management`、`academic-paper`、`academic-paper-reviewer`、`academic-pipeline` 和 `deep-research` 等工具/技能。具体版本、路径、用途和注意事项见 `TOOLING.md` 与 `SKILL_PLUGIN_EVALUATION.md`。
+
+本项目流程已整理为 `COURSE_PAPER_REUSABLE_WORKFLOW.md`，并生成本地 skill `course-paper-workflow`。该 skill 的项目内副本位于 `skills/course-paper-workflow/SKILL.md`，同时已复制到 `C:\Users\Zicheng Wang\.codex\skills\course-paper-workflow\SKILL.md`，便于后续课程论文项目复用。
 
 ## 隐私提示
 

@@ -58,6 +58,8 @@
 | Pandoc winget package | `winget install --id JohnMacFarlane.Pandoc --exact` | 2026-06-06 | 安装 Pandoc，用于 Markdown/DOCX/HTML/PDF 等格式转换 | 安装版本 3.9.0.2 |
 | PyPI `pdf2image` package | https://pypi.org/project/pdf2image/ | 2026-06-06 | 安装 PDF 页面图片渲染依赖，配合 LibreOffice、Poppler 和 `documents` skill 做 DOCX 视觉 QA | 安装版本 1.17.0；命令：`python -m pip install pdf2image` |
 | Project DOCX build script | `scripts/build_course_paper_docx.py` | 2026-06-06 | 将 Markdown 初稿转换为带真实 Word 表格的 `COURSE_PAPER_DRAFT.docx` | 本地项目脚本，使用 Pandoc、LibreOffice 和 python-docx |
+| Reusable course paper workflow guide | `COURSE_PAPER_REUSABLE_WORKFLOW.md` | 2026-06-07 | 记录当前项目可复用流程，用于后续课程论文、文献综述和毕业设计文献部分 | 本地说明文档 |
+| Local Codex skill `course-paper-workflow` | `skills/course-paper-workflow/SKILL.md`; `C:\Users\Zicheng Wang\.codex\skills\course-paper-workflow\SKILL.md` | 2026-06-07 | 将本项目流程封装为可复用 skill，便于后续新项目调用 | 项目内副本已提交；全局副本已复制到 Codex skills 目录 |
 | OpenAI curated skill `openai-docs` | `python ...\install-skill-from-github.py --repo openai/skills --path skills/.curated/openai-docs` | 2026-06-06 | 安装 OpenAI 官方文档查询技能 | 需要重启 Codex 后生效 |
 | skills.sh search | `npx skills find academic writing/literature review/citation bibtex/paper writing/docx document` | 2026-06-06 | 搜索适合论文写作、文献综述和引用管理的外部技能 | 低可信或重复技能未安装 |
 | `citation-management` external skill | `npx skills add davila7/claude-code-templates@citation-management -g -y` | 2026-06-06 | 安装引用管理技能，用于 DOI/PMID/BibTeX 元数据整理和校验 | 安装到 `C:\Users\Zicheng Wang\.agents\skills\citation-management` |

@@ -462,3 +462,39 @@
   - DOCX 元数据作者与最后修改者为空；仅保留封面“姓名”“学号”空白标签，未写入实际个人信息、电话、邮箱或身份证信息。
   - `git diff --check` 未发现空白或格式错误。
 - git 状态：本次分页与视觉美观复核修改已提交并推送到 `origin/main`，提交信息为 `docs: refine word pagination`；推送后用 `git status --short` 验证工作树仅剩未跟踪的本地副本文件。
+
+## 2026-06-07 可复用课程论文流程文档与 skill
+
+- 操作者：Codex
+- 工作目标：根据当前项目实际流程，整理一份后续课程论文可复用的说明文档，并封装为本地 Codex skill，便于之后撰写课程论文、文献综述或毕业设计文献部分时直接复用。
+- 修改或新增文件：
+  - `COURSE_PAPER_REUSABLE_WORKFLOW.md`
+  - `skills/course-paper-workflow/SKILL.md`
+  - `README.md`
+  - `TOOLING.md`
+  - `SOURCES.md`
+  - `PROJECT_PROGRESS.md`
+- 本地全局 skill：
+  - 已复制到 `C:\Users\Zicheng Wang\.codex\skills\course-paper-workflow\SKILL.md`
+- 工作内容：
+  - 将本项目流程整理为 12 个阶段：项目初始化、隐私处理、任务书解读、选题查重、高分任务规划、文献检索、来源记录、证据矩阵、精读笔记、正文写作、Word 排版与渲染检查、GitHub 推送。
+  - 按 `skill-creator` 原则新增项目内 skill，只保留后续 Agent 执行课程论文工作所需的核心流程、检查项和命令。
+  - 在 `README.md`、`TOOLING.md` 和 `SOURCES.md` 中登记新增说明文档与 skill。
+- 使用来源：
+  - `AGENTS.md`
+  - `PROJECT_PROGRESS.md`
+  - `SOURCES.md`
+  - `COURSE_PAPER_TASK_PLAN.md`
+  - `LITERATURE_SEARCH_RECORD.md`
+  - `EVIDENCE_MATRIX.md`
+  - `CORE_LITERATURE_NOTES.md`
+  - `COURSE_PAPER_DRAFT.md`
+  - `COURSE_PAPER_FORMATTED.docx`
+  - `scripts/build_course_paper_docx.py`
+  - 本地 `skill-creator` skill 指南
+- 验证结果：
+  - 已确认 `COURSE_PAPER_REUSABLE_WORKFLOW.md`、`skills/course-paper-workflow/SKILL.md` 和 `C:\Users\Zicheng Wang\.codex\skills\course-paper-workflow\SKILL.md` 均存在。
+  - 已确认项目内 skill frontmatter 包含 `name: course-paper-workflow` 和 `description`。
+  - 已确认说明文档包含项目初始化、文献检索、Word 正式版生成和可复用提示词等关键章节。
+  - `git diff --check` 未发现空白或格式错误。
+- git 状态：本次记录添加后需要提交并推送；当前工作区存在上一轮中断留下的 Word 文件修改和未跟踪副本，本次提交将只包含本次新增流程文档、skill 和追踪文件。
