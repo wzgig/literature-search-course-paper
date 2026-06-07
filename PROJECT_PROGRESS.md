@@ -611,4 +611,4 @@
   - `git diff --check` 未发现空白或格式错误。
   - 已对 `COURSE_PAPER_FORMATTED.docx`、新文件夹内 `MSH3_COURSE_PAPER_FORMATTED.docx` 和 MSH3 任务书执行 DOCX 文本隐私扫描，未发现电话、邮箱、身份证、联系方式等真实个人信息。
   - LibreOffice 已成功将新文件夹内 `MSH3_COURSE_PAPER_FORMATTED.docx` 导出为临时 PDF，`pdfinfo` 显示 29 页 A4。
-- git 状态：本条记录添加后需要提交并推送；本地重复副本因属于备份/副本文件且已加入 `.gitignore`，不会进入公开仓库。
+- git 状态：MSH3 文件夹整理与当前未推送内容同步已提交并推送到 `origin/main`；提交哈希 `898da97`，提交信息为 `docs: organize MSH3 paper files`。本地重复副本因属于备份/副本文件且已加入 `.gitignore`，不会进入公开仓库。本条 git 状态补记将随后单独提交并推送。
