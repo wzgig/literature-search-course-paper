@@ -28,11 +28,13 @@ Smoke test：
 | 脚本 | 用途 | 说明 |
 | --- | --- | --- |
 | `scripts/build_course_paper_docx.py` | 从 `COURSE_PAPER_DRAFT.md` 生成 `COURSE_PAPER_FORMATTED.docx` | 使用课程 Word 模板作为样式基础，自动生成封面、静态目录、正文、真实 Word 表格、流程图、页眉页码和参考文献悬挂缩进 |
+| `scripts/build_msh3_course_paper_docx.py` | 从 `MSH3_COURSE_PAPER_DRAFT.md` 生成 `MSH3_COURSE_PAPER_FORMATTED.docx` | 使用同一课程 Word 模板样式，适配《基因检测与解读》MSH3 论文，生成封面、目录、正文、表格、临床路径图、页眉页码、参考文献和查重报告附页 |
 
 推荐生成命令：
 
 ```powershell
 python .\scripts\build_course_paper_docx.py
+python .\scripts\build_msh3_course_paper_docx.py
 ```
 
 推荐渲染检查流程：

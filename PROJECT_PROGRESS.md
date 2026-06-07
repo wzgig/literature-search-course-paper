@@ -527,3 +527,44 @@
   - 已确认任务书基因列表中第 81 号为 `MSH3`。
   - 已将新任务书登记到 `SOURCES.md`。
 - git 状态：本次记录添加后需要提交并推送；当前工作区存在上一轮中断留下的 Word 文件修改和未跟踪副本，本次提交将只包含 MSH3 任务书、来源和进展记录相关文件。
+
+## 2026-06-07 MSH3 基因检测课程论文检索、初稿与 Word 正式稿
+
+- 操作者：Codex
+- 工作目标：根据《基因检测与解读》任务书和第 81 号基因 `MSH3`，完成课程论文检索、证据管理、初稿撰写、模板化 Word 排版和格式美化提升。
+- 修改或新增文件：
+  - `MSH3_COURSE_PAPER_TASK_PLAN.md`
+  - `MSH3_LITERATURE_SEARCH_RECORD.md`
+  - `MSH3_EVIDENCE_MATRIX.md`
+  - `MSH3_CORE_LITERATURE_NOTES.md`
+  - `MSH3_COURSE_PAPER_DRAFT.md`
+  - `MSH3_COURSE_PAPER_FORMATTED.docx`
+  - `scripts/build_msh3_course_paper_docx.py`
+  - `README.md`
+  - `TOOLING.md`
+  - `SOURCES.md`
+  - `PROJECT_PROGRESS.md`
+- 使用来源：
+  - 本地任务书 `基因检测与解读-结课论文任务书-25医检专升本.docx`
+  - 本地模板 `文献检索与论文写作结课论文模板-(1).doc`
+  - NCBI Gene MSH3、NCBI ClinVar MSH3
+  - PubMed E-utilities 检索和 PMID 27476653、37402566、35675019、38243056、40237887、36768460、31243857、40097831、40809927、38956208、38691939、30561401、35166826、25741868
+  - 中华人民共和国个人信息保护法、人类遗传资源管理条例、生物安全法、GINA 官方来源
+  - `course-paper-workflow` skill 和 `documents` skill 的 Word 渲染 QA 原则
+- 工作内容：
+  - 建立 MSH3 专属任务规划，明确本轮只完成课程论文，不制作 PPT。
+  - 记录 5 条 PubMed 检索式：宽检索 480 条、近 5 年息肉病/结直肠癌 59 条、病例/家系 159 条、MMR/MSI/EMAST 127 条、检测与变异解释 149 条。
+  - 建立证据矩阵和核心精读笔记，将 MSH3 功能、双等位胚系变异、腺瘤性息肉病、NGS panel、WES/WGS、MSI/EMAST、ACMG/AMP 变异解释和伦理法律分别映射到论文章节。
+  - 撰写 `MSH3_COURSE_PAPER_DRAFT.md`，正文包含摘要、英文摘要、文献检索、机制背景、检测技术、临床案例、质量控制、伦理法律、反思、结论、20 条参考文献和查重报告附页。
+  - 新增 `scripts/build_msh3_course_paper_docx.py`，使用课程 Word 模板结构生成 `MSH3_COURSE_PAPER_FORMATTED.docx`，包含封面、目录、页眉页码、真实 Word 表格、临床路径图、参考文献悬挂缩进和查重报告附页。
+  - 二次优化脚本，为表格行设置不跨页拆分，并让临床路径图另起页，改善跨页视觉效果。
+- 验证结果：
+  - `python -m py_compile .\scripts\build_msh3_course_paper_docx.py` 通过。
+  - `python .\scripts\build_msh3_course_paper_docx.py` 成功生成 `MSH3_COURSE_PAPER_FORMATTED.docx`。
+  - `MSH3_COURSE_PAPER_DRAFT.md` 约 18843 个字符，其中中文汉字约 7864 个，参考文献 20 条；DOCX 提取文本约 18565 个字符，中文汉字约 8022 个。
+  - LibreOffice `soffice.com` 成功导出 PDF；`pdfinfo` 显示 29 页 A4；Poppler `pdftoppm` 成功渲染 29 张 PNG。
+  - 已人工查看封面、目录、摘要、表 1、表 2、表 3、流程图、参考文献和查重报告附页 PNG，未发现乱码、裁切、重叠、表格溢出或空白页。
+  - `documents` skill 的 `render_docx.py` 因本机无法定位 LibreOffice 可执行文件失败，已按 skill fallback 使用同一 LibreOffice 安装的 `soffice.com` 加 Poppler 完成等效视觉 QA。
+  - DOCX 元数据作者和最后修改者为空；隐私扫描未发现电话、邮箱、身份证、联系方式等真实个人信息；封面仅保留“姓名”“学号”空白占位和班级字段 `25医检专升本`。
+  - `git diff --check` 未发现空白或格式错误。
+- git 状态：本次记录添加后需要提交并推送；提交将只包含 MSH3 相关文件和追踪文档，保留上一轮中断遗留的非 MSH3 本地副本不纳入提交。

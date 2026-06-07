@@ -4,13 +4,16 @@
 
 GitHub 仓库地址：https://github.com/wzgig/literature-search-course-paper
 
-## 项目主题
+## 项目主题与当前交付
 
-当前拟定课程论文题目：
+本项目已形成两条课程论文工作线：
 
-> 可溶性fms样酪氨酸激酶-1/胎盘生长因子比值在子痫前期早期预测中的临床检验应用进展
+1. 《文献检索与论文写作》课程论文：
+   `可溶性fms样酪氨酸激酶-1/胎盘生长因子比值在子痫前期早期预测中的临床检验应用进展`
+2. 《基因检测与解读》课程论文：
+   `MSH3基因的检测与分析`
 
-该题目面向医学检验技术专业，聚焦 sFlt-1/PlGF 比值检测在子痫前期早期预测中的临床检验应用，适合写作文献综述型课程论文，且已核对当前选题表未重复。
+当前最新交付为 MSH3 基因检测课程论文，已根据第 81 号基因 `MSH3` 完成检索记录、证据矩阵、精读笔记、Markdown 初稿和模板化 Word 正式稿。
 
 ## 当前文件
 
@@ -34,6 +37,13 @@ GitHub 仓库地址：https://github.com/wzgig/literature-search-course-paper
 | `LITERATURE_SEARCH_RECORD.md` | 文献检索式、检索结果和筛选过程记录 |
 | `EVIDENCE_MATRIX.md` | 核心文献证据矩阵 |
 | `CORE_LITERATURE_NOTES.md` | 核心文献精读笔记和可写入论文的证据链 |
+| `MSH3_COURSE_PAPER_TASK_PLAN.md` | MSH3 基因检测课程论文任务规划 |
+| `MSH3_LITERATURE_SEARCH_RECORD.md` | MSH3 文献检索式、结果数量和筛选记录 |
+| `MSH3_EVIDENCE_MATRIX.md` | MSH3 核心证据矩阵 |
+| `MSH3_CORE_LITERATURE_NOTES.md` | MSH3 核心文献精读笔记 |
+| `MSH3_COURSE_PAPER_DRAFT.md` | MSH3 课程论文 Markdown 初稿 |
+| `MSH3_COURSE_PAPER_FORMATTED.docx` | MSH3 课程论文按模板排版后的正式 Word 草稿 |
+| `scripts/build_msh3_course_paper_docx.py` | 生成 MSH3 正式 Word 版的脚本 |
 
 ## 工作规则
 

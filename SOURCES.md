@@ -86,3 +86,58 @@
 | 杨岚等 2024 中文临床研究 | https://cjournal.hep.com.cn/0253-3626/CN/1160148271319671544 | 2026-06-06 | 核验 PLGF、SFLT-1、GLYFN 联合预测子痫前期中文研究 | DOI: 10.13406/j.cnki.cyxb.003412 |
 | 刘鹏等 2026 中文临床研究 | https://www.obgyncn.com/CN/10.13390/j.issn.1672-1861.2026.03.003 | 2026-06-06 | 记录最新中文 PlGF、sFlt-1 早发型重度子痫前期临床意义研究线索 | DOI: 10.13390/j.issn.1672-1861.2026.03.003，需全文核实摘要细节 |
 | SinoMed 中文索引条目 | https://www.sinomed.ac.cn/article.do?ui=2020230157 | 2026-06-06 | 记录“sFlt-1与PlGF比值在预测子痫前期中的应用价值”中文线索 | 需全文核实是否为译介、综述或本土研究 |
+
+## MSH3基因检测课程论文来源
+
+当前题目：`MSH3基因的检测与分析`
+
+### 数据库检索与官方入口
+
+| 来源 | 链接或检索式 | 访问日期 | 用途 | 备注 |
+| --- | --- | --- | --- | --- |
+| PubMed MSH3 宽检索 | `("MSH3"[Title/Abstract] OR "MutS homolog 3"[Title/Abstract]) AND (gene testing OR sequencing OR panel OR variant OR polyposis OR colorectal cancer)` | 2026-06-07 | 建立 MSH3 检测、变异、息肉病和结直肠癌候选文献池 | 返回 480 条 |
+| PubMed 近 5 年息肉病/结直肠癌检索 | `("MSH3"[Title/Abstract]) AND (polyposis OR colorectal) AND (2020:2026[pdat])` | 2026-06-07 | 筛选近年前沿临床研究 | 返回 59 条 |
+| PubMed 病例/家系检索 | `("MSH3"[Title/Abstract]) AND (case report OR family OR biallelic OR germline)` | 2026-06-07 | 支撑临床案例分析 | 返回 159 条 |
+| PubMed MMR/MSI/EMAST 检索 | `("MSH3"[Title/Abstract]) AND (microsatellite instability OR mismatch repair OR EMAST) AND (2020:2026[pdat])` | 2026-06-07 | 支撑错配修复、肿瘤辅助检测和前沿机制 | 返回 127 条 |
+| PubMed 检测与变异解释检索 | `("MSH3"[Title/Abstract]) AND (panel OR exome OR sequencing OR ClinVar OR ACMG OR variant) AND (2020:2026[pdat])` | 2026-06-07 | 支撑 NGS panel、WES/WGS 和变异解释 | 返回 149 条 |
+| NCBI Gene MSH3 | https://www.ncbi.nlm.nih.gov/gene/4437 | 2026-06-07 | 核对 MSH3 基因名称、定位、别名和功能摘要 | 官方数据库 |
+| NCBI ClinVar MSH3 | https://www.ncbi.nlm.nih.gov/clinvar/?term=MSH3%5Bgene%5D | 2026-06-07 | 核对 MSH3 临床变异数据库入口和变异解释来源 | 官方数据库 |
+
+### 核心期刊文献
+
+| 来源 | 链接 | 访问日期 | 用途 | 备注 |
+| --- | --- | --- | --- | --- |
+| PubMed PMID 27476653 | https://pubmed.ncbi.nlm.nih.gov/27476653/ | 2026-06-07 | MSH3 双等位胚系变异与隐性腺瘤性息肉病发现性文献 | DOI: 10.1016/j.ajhg.2016.06.015 |
+| PubMed PMID 37402566 | https://pubmed.ncbi.nlm.nih.gov/37402566/ | 2026-06-07 | MSH3 作为腺瘤性息肉病易感基因的近年确认性研究 | DOI: 10.1136/jmg-2023-109341 |
+| PubMed PMID 35675019 | https://pubmed.ncbi.nlm.nih.gov/35675019/ | 2026-06-07 | MSH3 相关息肉病大家系案例 | DOI: 10.1007/s10689-022-00297-x |
+| PubMed PMID 38243056 | https://pubmed.ncbi.nlm.nih.gov/38243056/ | 2026-06-07 | 复合杂合 MSH3 胚系变异和肿瘤 MMR 功能异常案例 | DOI: 10.1038/s41698-024-00511-2 |
+| PubMed PMID 40237887 | https://pubmed.ncbi.nlm.nih.gov/40237887/ | 2026-06-07 | 腺瘤性息肉病遗传学和临床特征综述 | DOI: 10.1007/s10689-025-00460-0 |
+| PubMed PMID 36768460 | https://pubmed.ncbi.nlm.nih.gov/36768460/ | 2026-06-07 | 遗传性结直肠癌多基因检测和 gene panel 背景 | DOI: 10.3390/ijms24032137 |
+| PubMed PMID 31243857 | https://pubmed.ncbi.nlm.nih.gov/31243857/ | 2026-06-07 | NTHL1、MSH3 等新近提出息肉病基因贡献评估 | DOI: 10.1002/humu.23853 |
+| PubMed PMID 40097831 | https://pubmed.ncbi.nlm.nih.gov/40097831/ | 2026-06-07 | 早发结直肠癌按表型进行胚系检测的证据 | DOI: 10.1038/s41431-025-01808-x |
+| PubMed PMID 40809927 | https://pubmed.ncbi.nlm.nih.gov/40809927/ | 2026-06-07 | 全外显子测序识别结直肠息肉病胚系致病变异 | DOI: 10.3748/wjg.v31.i29.104830 |
+| PubMed PMID 38956208 | https://pubmed.ncbi.nlm.nih.gov/38956208/ | 2026-06-07 | MMR 缺陷结直肠癌中 MSH3/MSH6 同聚物开关机制 | DOI: 10.1038/s41588-024-01777-9 |
+| PubMed PMID 38691939 | https://pubmed.ncbi.nlm.nih.gov/38691939/ | 2026-06-07 | pMMR/MSI-H 结直肠癌机制，支撑综合解释局限 | DOI: 10.1016/j.ebiom.2024.105142 |
+| PubMed PMID 30561401 | https://pubmed.ncbi.nlm.nih.gov/30561401/ | 2026-06-07 | MSI 和 MMR 基础背景 | DOI: 10.23750/abm.v89i9-S.7960 |
+| PubMed PMID 35166826 | https://pubmed.ncbi.nlm.nih.gov/35166826/ | 2026-06-07 | SLX4、MSH2、MutSβ/MutSα 与 DNA 修复机制背景 | DOI: 10.1093/nar/gkac075 |
+| PubMed PMID 25741868 | https://pubmed.ncbi.nlm.nih.gov/25741868/ | 2026-06-07 | ACMG/AMP 序列变异解释标准 | DOI: 10.1038/gim.2015.30 |
+
+### 伦理法律来源
+
+| 来源 | 链接 | 访问日期 | 用途 | 备注 |
+| --- | --- | --- | --- | --- |
+| 中华人民共和国个人信息保护法 | https://www.gov.cn/xinwen/2021-08/20/content_5632486.htm | 2026-06-07 | 支撑基因隐私、敏感个人信息保护和最小必要原则 | 官方法规来源 |
+| 中华人民共和国人类遗传资源管理条例 | https://www.gov.cn/zhengce/content/2019-06/10/content_5398829.htm | 2026-06-07 | 支撑人类遗传资源采集、保存、利用和对外提供合规讨论 | 官方法规来源 |
+| 中华人民共和国生物安全法 | https://www.gov.cn/xinwen/2020-10/18/content_5552113.htm | 2026-06-07 | 支撑人类遗传资源和生物安全治理讨论 | 官方法规来源 |
+| Genetic Information Nondiscrimination Act of 2008 | https://www.eeoc.gov/statutes/genetic-information-nondiscrimination-act-2008 | 2026-06-07 | 支撑遗传歧视的国外法规示例 | EEOC 官方来源 |
+
+### MSH3写作与排版产物
+
+| 来源 | 链接或文件名 | 访问日期 | 用途 | 备注 |
+| --- | --- | --- | --- | --- |
+| MSH3 任务规划 | `MSH3_COURSE_PAPER_TASK_PLAN.md` | 2026-06-07 | 记录任务边界、评分映射和章节规划 | 本地项目材料 |
+| MSH3 文献检索记录 | `MSH3_LITERATURE_SEARCH_RECORD.md` | 2026-06-07 | 保存检索式、结果数量和核心 PMID | 本地项目材料 |
+| MSH3 证据矩阵 | `MSH3_EVIDENCE_MATRIX.md` | 2026-06-07 | 管理核心证据和论文使用位置 | 本地项目材料 |
+| MSH3 精读笔记 | `MSH3_CORE_LITERATURE_NOTES.md` | 2026-06-07 | 汇总可写入论文的证据链 | 本地项目材料 |
+| MSH3 论文初稿 | `MSH3_COURSE_PAPER_DRAFT.md` | 2026-06-07 | 课程论文 Markdown 初稿 | 本地项目材料 |
+| MSH3 Word 生成脚本 | `scripts/build_msh3_course_paper_docx.py` | 2026-06-07 | 生成模板化正式 Word 稿 | 本地项目脚本 |
