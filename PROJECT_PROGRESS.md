@@ -568,3 +568,47 @@
   - DOCX 元数据作者和最后修改者为空；隐私扫描未发现电话、邮箱、身份证、联系方式等真实个人信息；封面仅保留“姓名”“学号”空白占位和班级字段 `25医检专升本`。
   - `git diff --check` 未发现空白或格式错误。
 - git 状态：MSH3 论文检索、初稿与 Word 正式稿批次已提交并推送到 `origin/main`；提交哈希 `cb7053d`，提交信息为 `docs: draft and format MSH3 gene paper`。本条 git 状态补记将随后单独提交并推送，仍不纳入上一轮中断遗留的非 MSH3 本地副本。
+
+## 2026-06-07 MSH3 项目文件夹整理与未推送内容同步
+
+- 操作者：Codex
+- 工作目标：按用户要求，将与 `基因检测与解读-结课论文任务书-25医检专升本.docx` 相关的 MSH3 课程论文材料集中到独立文件夹，便于后续查看；同时处理当前工作区未推送内容并推送到 GitHub。
+- 修改或新增文件：
+  - 新建文件夹 `基因检测与解读_MSH3结课论文/`
+  - `基因检测与解读_MSH3结课论文/README.md`
+  - `基因检测与解读_MSH3结课论文/基因检测与解读-结课论文任务书-25医检专升本.docx`
+  - `基因检测与解读_MSH3结课论文/MSH3_COURSE_PAPER_TASK_PLAN.md`
+  - `基因检测与解读_MSH3结课论文/MSH3_LITERATURE_SEARCH_RECORD.md`
+  - `基因检测与解读_MSH3结课论文/MSH3_EVIDENCE_MATRIX.md`
+  - `基因检测与解读_MSH3结课论文/MSH3_CORE_LITERATURE_NOTES.md`
+  - `基因检测与解读_MSH3结课论文/MSH3_COURSE_PAPER_DRAFT.md`
+  - `基因检测与解读_MSH3结课论文/MSH3_COURSE_PAPER_FORMATTED.docx`
+  - `基因检测与解读_MSH3结课论文/scripts/build_msh3_course_paper_docx.py`
+  - `.gitignore`
+  - `README.md`
+  - `TOOLING.md`
+  - `SOURCES.md`
+  - `PROJECT_PROGRESS.md`
+  - `COURSE_PAPER_FORMATTED.docx`
+- 使用来源：
+  - `AGENTS.md`
+  - `PROJECT_PROGRESS.md`
+  - `SOURCES.md`
+  - `course-paper-workflow` skill
+  - 已完成的 MSH3 论文材料和课程任务书
+- 工作内容：
+  - 使用 `git mv` 将 MSH3 任务书、规划、检索记录、证据矩阵、精读笔记、Markdown 初稿、Word 成稿和 MSH3 专用生成脚本移入 `基因检测与解读_MSH3结课论文/`。
+  - 新增文件夹内 `README.md`，说明论文题目、文件用途和重新生成 Word 的命令。
+  - 调整 MSH3 Word 生成脚本路径，使其在新文件夹下读取本文件夹初稿，并继续使用项目根目录的课程 Word 模板。
+  - 更新根目录 `README.md`、`TOOLING.md` 和 `SOURCES.md`，将旧 MSH3 根目录路径改为新文件夹路径。
+  - 将本地重复副本 `1.doc`、`课程论文.docx`、`课程论文.pdf`、`文献检索与论文写作结课论文模板-(1) - 副本.doc`、`文献检索与论文写作课程论文任务书(1) - 副本.docx` 加入 `.gitignore`，按项目规则不发布备份/副本文件。
+  - 将此前已跟踪但未推送的 `COURSE_PAPER_FORMATTED.docx` 修改一并纳入本次同步，避免工作区保留未提交的正式文件修改。
+- 验证结果：
+  - 已确认移动目标路径位于当前项目根目录内，未越出工作区。
+  - `python -m py_compile .\基因检测与解读_MSH3结课论文\scripts\build_msh3_course_paper_docx.py` 通过。
+  - `python .\基因检测与解读_MSH3结课论文\scripts\build_msh3_course_paper_docx.py` 成功运行，并重新生成新文件夹内 `MSH3_COURSE_PAPER_FORMATTED.docx`。
+  - `rg` 检查显示根目录 `README.md`、`TOOLING.md`、`SOURCES.md` 已使用新文件夹路径；`PROJECT_PROGRESS.md` 中旧路径仅作为历史记录保留。
+  - `git diff --check` 未发现空白或格式错误。
+  - 已对 `COURSE_PAPER_FORMATTED.docx`、新文件夹内 `MSH3_COURSE_PAPER_FORMATTED.docx` 和 MSH3 任务书执行 DOCX 文本隐私扫描，未发现电话、邮箱、身份证、联系方式等真实个人信息。
+  - LibreOffice 已成功将新文件夹内 `MSH3_COURSE_PAPER_FORMATTED.docx` 导出为临时 PDF，`pdfinfo` 显示 29 页 A4。
+- git 状态：本条记录添加后需要提交并推送；本地重复副本因属于备份/副本文件且已加入 `.gitignore`，不会进入公开仓库。

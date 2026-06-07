@@ -19,3 +19,10 @@ __pycache__/
 # Local editor folders
 .vscode/
 .idea/
+
+# Local duplicate working copies kept out of the public repository
+1.doc
+课程论文.docx
+课程论文.pdf
+文献检索与论文写作结课论文模板-(1) - 副本.doc
+文献检索与论文写作课程论文任务书(1) - 副本.docx

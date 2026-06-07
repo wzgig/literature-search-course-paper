@@ -19,9 +19,10 @@ from docx.shared import Cm, Inches, Pt, RGBColor
 
 
 ROOT = Path(__file__).resolve().parents[1]
+PROJECT_ROOT = ROOT.parent
 SOURCE_MD = ROOT / "MSH3_COURSE_PAPER_DRAFT.md"
 OUTPUT_DOCX = ROOT / "MSH3_COURSE_PAPER_FORMATTED.docx"
-TEMPLATE_DOC = ROOT / "文献检索与论文写作结课论文模板-(1).doc"
+TEMPLATE_DOC = PROJECT_ROOT / "文献检索与论文写作结课论文模板-(1).doc"
 SOFFICE = Path(os.environ.get("SOFFICE", r"C:\Program Files\LibreOffice\program\soffice.com"))
 
 CN_BODY = "宋体"

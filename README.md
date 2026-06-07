@@ -37,13 +37,16 @@ GitHub 仓库地址：https://github.com/wzgig/literature-search-course-paper
 | `LITERATURE_SEARCH_RECORD.md` | 文献检索式、检索结果和筛选过程记录 |
 | `EVIDENCE_MATRIX.md` | 核心文献证据矩阵 |
 | `CORE_LITERATURE_NOTES.md` | 核心文献精读笔记和可写入论文的证据链 |
-| `MSH3_COURSE_PAPER_TASK_PLAN.md` | MSH3 基因检测课程论文任务规划 |
-| `MSH3_LITERATURE_SEARCH_RECORD.md` | MSH3 文献检索式、结果数量和筛选记录 |
-| `MSH3_EVIDENCE_MATRIX.md` | MSH3 核心证据矩阵 |
-| `MSH3_CORE_LITERATURE_NOTES.md` | MSH3 核心文献精读笔记 |
-| `MSH3_COURSE_PAPER_DRAFT.md` | MSH3 课程论文 Markdown 初稿 |
-| `MSH3_COURSE_PAPER_FORMATTED.docx` | MSH3 课程论文按模板排版后的正式 Word 草稿 |
-| `scripts/build_msh3_course_paper_docx.py` | 生成 MSH3 正式 Word 版的脚本 |
+| `基因检测与解读_MSH3结课论文/` | 《基因检测与解读》MSH3 结课论文资料文件夹 |
+| `基因检测与解读_MSH3结课论文/README.md` | MSH3 文件夹索引 |
+| `基因检测与解读_MSH3结课论文/基因检测与解读-结课论文任务书-25医检专升本.docx` | 《基因检测与解读》课程论文任务书 |
+| `基因检测与解读_MSH3结课论文/MSH3_COURSE_PAPER_TASK_PLAN.md` | MSH3 基因检测课程论文任务规划 |
+| `基因检测与解读_MSH3结课论文/MSH3_LITERATURE_SEARCH_RECORD.md` | MSH3 文献检索式、结果数量和筛选记录 |
+| `基因检测与解读_MSH3结课论文/MSH3_EVIDENCE_MATRIX.md` | MSH3 核心证据矩阵 |
+| `基因检测与解读_MSH3结课论文/MSH3_CORE_LITERATURE_NOTES.md` | MSH3 核心文献精读笔记 |
+| `基因检测与解读_MSH3结课论文/MSH3_COURSE_PAPER_DRAFT.md` | MSH3 课程论文 Markdown 初稿 |
+| `基因检测与解读_MSH3结课论文/MSH3_COURSE_PAPER_FORMATTED.docx` | MSH3 课程论文按模板排版后的正式 Word 草稿 |
+| `基因检测与解读_MSH3结课论文/scripts/build_msh3_course_paper_docx.py` | 生成 MSH3 正式 Word 版的脚本 |
 
 ## 工作规则
 
